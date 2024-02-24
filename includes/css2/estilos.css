@@ -1,0 +1,139 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body{
+  background-color: white;
+}
+.ContenedorPrincipal{
+  width: 100%;
+  margin: 0 auto;
+  
+}
+header{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  border-bottom: 3px solid grey;
+  
+}
+header nav{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+}
+header h1{
+  margin: 0 auto;
+  width: 500px;
+  vertical-align: text-bottom;
+
+}
+
+header nav ul{
+  float: right;
+  list-style: none;
+  text-align: center;
+  margin: 0 10px;
+    
+}
+header nav li{
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px;
+}
+header nav li a{
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 15px 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid grey;
+}
+header nav li a:hover{
+  color: white;
+  background-color: black;
+}
+.cuerpo {
+  display: flex;
+
+}
+section {
+  margin-top: 25px; 
+  width: 60%;
+}
+
+aside{
+  width: 20%;
+  float: right;
+  background-color:purple;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+div .menu {
+  width: 20%;
+  float: left;
+  background-color:purple;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+footer{
+  width: 100%;
+  clear: both;
+  padding: 60px;
+  background-color: black;
+  margin-top: 20px;
+
+}
+footer div{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+.columna-1{
+  display: inline;
+}
+.columna-1 a{
+  color: purple;
+  text-decoration: none;
+}
+.columna-1 a:hover{
+  color: red;
+  text-decoration: none;
+}
+.columna-2{
+  display: inline;
+  margin-left: 70px;
+  width: 750px;
+}
+.columna-2 a i{
+  width: 50px;
+  color: purple;
+}
+.columna-2 a i:hover{
+  width: 100px;
+  color: red;
+  
+}
