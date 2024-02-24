@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vintage Music</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="discos, vinilos, cassettes, discografías, musica, grupos, cantante, accesorios, reproductores"> 
+    <meta name="description" content="Encuentra lo último en música. En nuestra tienda online encontrarás una gran variedad de estilos musicales y novedades discográficas. Are you Ready?">
+
+    <link rel="logo-touch-icon" href="includes/imagenes/logo-empresa.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="includes/imagenes/icono-empresa.ico">
+
+    <link rel="stylesheet" href="includes/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="includes/css/templatemo.css">
+    
+    <link rel="stylesheet" href="includes/css2/estilos1.css" >
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="includes/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    
+</head>
+<body>
+    <!-- Parte Superior del Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@vintagemusic.com">info@vintagemusic.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:657.029.433">657-029-433</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/Vintage Music" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Cierre de Parte Superior del Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="Pagina-Index.php">
+            <img src="includes/imagenes/logo-empresa.jpg" style= "width:100px; height:100px"/>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pagina-Index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PaginaTienda.php">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.php">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2" style="font-size: 24px;"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-2" style="font-size: 24px;"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" style="font-size: 14px;">(0)</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="login.php">
+                        <i class="fa fa-fw fa-user text-dark mr-2" style="font-size: 24px;"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" style="font-size: 14px;">Log In</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Cierre de Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="cuerpo">
+        
+        <div class="fondo">
+        <img src="includes/imagenes/borde-logo.png">
+        <h2>Déjate llevar por la nostalgia</h2>
+        </div>
+
+        <div class="acceso-tienda">
+            <h2>Descubre los artículos que tenemos preparados para ti</h2>
+            <p class="texto-grande">Desde Vintage Music atendemos a los enamorados de la musica y a los que se emocionan con los matices del sonido vintage que aportan los casettes, vinilos y dispositivos de reproducción relacionados.</p>
+            <br>
+            <p class="texto-grande">¿Quieres descubrir lo que tenemos preparado para ti?</p>
+            <button><a class="nav-link" href="PaginaTienda.php">Tienda</a></button>
+        </div>
+
+        <div class="slider">
+            <input class="slider__dot" type="radio" name="slider" title="slide1" checked="checked"/>
+            <input class="slider__dot" type="radio" name="slider" title="slide2"/>
+            <input class="slider__dot" type="radio" name="slider" title="slide3"/>
+            <input class="slider__dot" type="radio" name="slider" title="slide4"/>
+            <div class="slider__inner">
+                <div class="slider__body">
+                    <img src="includes/imagenes/torre-vinilos.jpg" alt="torreVinilos" width="310" height="260">
+                    <h2 class="slider__caption">Vinilos</h2>
+                    <p class="slider__text">
+                        Si eres un nostálgico como nosotros, tienes que echarle un vistazo a nuestra colección de vinilos.
+                        Sabemos que el toque Retro siempre vuelve, porque núnca ha pasado de moda. 
+                    </p>
+                </div>
+                <div class="slider__body">
+                    <img src="includes/imagenes/retro-cassette.jpg" alt="retroCassette" width="310" height="260">
+                    <h2 class="slider__caption">Cassettes</h2>
+                    <p class="slider__text">                            
+                        Disfruta del encanto de escuchar música con el toque del Cassette.
+                        Descubre el regalo con el que acompañamos cada compra. Tranquilo, no será nada estram-BOLI-co.
+                        </p>
+                </div>
+                <div class="slider__body">
+                <img src="includes/imagenes/walkman.jpg" alt="walkman" width="310" height="260">
+                    <h2 class="slider__caption">Reproductores</h2>
+                    <p class="slider__text">
+                        Ya seas de escuchar Vinilos o Cassettes, necesitas un reproductor que acompañe tu experiéncia.
+                        Busca entre nuestra selección y sueña que es tuyo.
+                    </p>
+                </div>
+                <div class="slider__body">
+                    <img src="includes/imagenes/auriculares.jpg" alt="retroCassette" width="310" height="260">
+                    <h2 class="slider__caption">Accesorios</h2>
+                    <p class="slider__text">
+                        No hay nada que haga mas Match que nuestros accesorios.
+                        ¿Quieres saber de que hablamos?
+                        Busca en nuestra sección de Accesorios y preparate pa todo un descubrimiento.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <!-- Contenido Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Vintage Music</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Calle Cristóbal Sanz, 41 03201
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:657-029-433">657-029-433</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@vintagemusic.com">info@vintagemusic.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Vinilos</a></li>
+                        <li><a class="text-decoration-none" href="#">Cassettes</a></li>
+                        <li><a class="text-decoration-none" href="#">Rock</a></li>
+                        <li><a class="text-decoration-none" href="#">Pop</a></li>
+                        <li><a class="text-decoration-none" href="#">Accesorios</a></li>
+                        <li><a class="text-decoration-none" href="#">Reporductores</a></li>
+                        <li><a class="text-decoration-none" href="#">Auriculares</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Localización</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="contacto.php">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Correo Electrónico</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribEmail" placeholder="Email">
+                        <div class="input-group-text btn-success text-light">Subscripción</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 Vintage Music 
+                            | Designed by <a rel="sponsored" href="https://diseñosdenuria" target="_blank">diseños de Nuria</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Inicio Script -->
+    <script src="includes/js/jquery-1.11.0.min.js"></script>
+    <script src="includes/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="includes/js/bootstrap.bundle.min.js"></script>
+    <script src="includes/js/templatemo.js"></script>
+    <script src="includes/js/custom.js"></script>
+    <!-- Fin Script -->
+</body>
+
+</html>
